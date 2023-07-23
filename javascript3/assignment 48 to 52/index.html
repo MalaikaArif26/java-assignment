@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <label for="name">Name:</label>
+  <input type="text" id="name" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" required>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" required>
+  <br>
+  <button onclick="evt()">submit</button>
+
+  <div id="displayData">
+    <!-- Form data will be displayed here -->
+</div>
+
+<div class="item">
+    <h2>Item Title</h2>
+    <p>Short item description</p>
+    <button onclick="showDetails()">Read More</button>
+    <p id="details" style="display:none;">Full item details</p>
+  </div>
+
+  <h1>Student Details Form</h1>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <br>
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" required>
+        <br>
+        <input type="submit" value="Add Student">
+    </form>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student details will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <div id="editForm" style="display: none;">
+        <h2>Edit Student Details</h2>
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" required>
+        <br>
+        <label for="editAge">Age:</label>
+        <input type="number" id="editAge" required>
+        <br>
+        <label for="editGrade">Grade:</label>
+        <input type="text" id="editGrade" required>
+        <br>
+        <input type="button" id="updateBtn" value="Update">
+        <input type="button" id="cancelBtn" value="Cancel">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+    <script src="app.js"></script>
+</body>
+</html>
